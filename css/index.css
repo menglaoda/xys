@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li{
+	list-style: none;
+}
+body{
+	font-family: "微软雅黑";
+	background: #fafafa;
+}
+.header{
+	width: 80vw;
+	height: 50px;
+	height: 43px;
+	margin: 0 auto;
+	background: url(../img/taotao.jpg) no-repeat;
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.header_sousu{
+	width: 400px;
+	height: 24px;
+	margin: 0 auto;
+	margin-top: 10px;
+	background: white;
+	border: solid 1px red;
+	position: relative;
+}
+.header_sousu input{
+	outline: medium;
+	text-indent: 16px;
+	border: none;
+	width: 330px;
+}
+.header_sousu span{
+	background: red;
+	height: 22px;
+	padding: 0px 4px;
+	position: absolute;
+	right: 0;
+}
+.naw{
+	width: 80vw;
+	height: 30px;
+	line-height: 30px;
+	display: flex;
+	margin: 0 auto;
+	border-bottom: solid 1px red;
+}
+.naw li{
+	padding: 0px 30px;
+	
+}
+.naw li:nth-child(1){
+	background: red;
+}
+.naw li:hover{
+	background: red;
+}
+.tuijian{
+	clear: both;
+	padding-top: 20px;
+	width: 80vw;
+	height: 20vw;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.tuijian_lunbo{
+	width: 240vw;
+	transition: left 2s linear;
+	position: absolute;
+	left: 0px;
+}
+.tuijian_lunbo img{
+	float: left;
+	width: 80vw;
+	height: 20vw;
+}
+.naw_1{
+	margin-top: 20px;
+}
+.list{
+	width:82vw;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	left: 1vw;	
+}
+.list li{
+	width: 18vw;
+	border: solid 1px #ccc;
+	box-sizing: content-box;
+	font-size: 12px;
+	position: relative;
+	float: left;
+	margin-right: 2.1vw;
+	margin-top: 3vw;
+}
+.list img{
+	width: 18vw;
+	height: 16vw;
+	border: none;
+}
+.list b{
+	color: red;
+	font-size: 16px;
+	position: relative;
+	top: -2px;
+}
+.list .address{
+	position: absolute;
+	right: 1vw;
+}
+.list h4{
+	font-weight: 100;
+	border-top: solid 1px #ccc;
+	padding: 5px 0px;
+}
+.dixian{
+	position: fixed;
+	left: 48vw;
+	bottom: 0px;
+	background: #ccc;
+	display: none;
+}
+@media screen and (max-width: 420px) {
+.header{
+	width: 100vw;
+}
+.header_sousu{
+	width: 60vw;
+}
+.header_sousu input{
+	width: 40vw;
+}
+.naw li{
+	padding: 0px 5px;
+	
+}
+.tuijian{
+	display: none;
+}
+.naw{
+	width: 100vw;
+	}
+}
+
