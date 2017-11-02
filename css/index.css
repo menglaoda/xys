@@ -230,7 +230,7 @@ body{
 .list .prize{
 	position: absolute;
 	top: 25vw;
-	right: 56vw;
+	left: 32vw;
 }
 .list .address{
 	position: absolute;
