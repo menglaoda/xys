@@ -58,7 +58,7 @@ $(function(){
 			$hongbao.hide();
 			$("body").css("overflow","");//使网页可滚动
 			$(document).unbind("touchmove");
-		},5000)
+		},3000)
 	})
 //	<li>
 //		<img src="img/1.jpg" />
