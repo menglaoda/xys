@@ -19,6 +19,9 @@ $(function(){
 	var $zhezhao = $(".zhezhao");
 	var $hongbao= $(".hongbao");
 	setTimeout(function(){
+		$(document).bind('touchmove', function(event) {
+		    event.preventDefault();//使网页不可滚动
+		});
 		$zhezhao.css("height",$(document).height());
 		$zhezhao.show();
 		if(parseInt($("body").width())>=500){
@@ -28,17 +31,14 @@ $(function(){
 			console.log("yidong")
 			$hongbao.animate({top: "40vw"},2000);
 		}
-		$("body").css("overflow","hidden");
-		$(document).bind('touchmove', function(event) {
-		    event.preventDefault();//使网页不可滚动
-		});
+		$("body").css("overflow","hidden");		
 	},3000)
 	//点击X红包消失
 	$(".hongbao_x").on("click",function(){
 		$zhezhao.hide();
 		$hongbao.hide();
 		$("body").css("overflow","");
-		$(document).unbind("touchmove");
+		$(document).unbind("touchmove");//使网页可滚动
 		//返回顶部
 		//$("body").animate({scrollTop: 0},1000);
 	})	
