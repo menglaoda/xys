@@ -15,6 +15,39 @@ window.onload = function(){
 	},4000)
 }
 $(function(){
+	//红包天降
+	var $zhezhao = $(".zhezhao");
+	var $hongbao= $(".hongbao");
+	setTimeout(function(){
+		$zhezhao.css("height",$(document).height());
+		$zhezhao.show();
+		$hongbao.animate({top: "+200px"},2000);
+		$("body").css("overflow","hidden");
+	},3000)
+	//点击X红包消失
+	$(".hongbao_x").on("click",function(){
+		$zhezhao.hide();
+		$hongbao.hide();
+		clearInterval(timerr);
+		$("body").css("overflow","");
+	})	
+	//点击拆红包
+	$(".hongbao_cai").on("click",function(){
+		//没中奖字体放大，缩小
+		$(".hongbao_cai").css("opacity",1)
+		timerr = setInterval(function(){
+			$(".hongbao_cai").css("font-size","16px");
+			setTimeout(function(){
+				$(".hongbao_cai").css("font-size","14px");
+			},500)
+		},1000)
+		setTimeout(function(){
+			clearInterval(timerr);
+			$zhezhao.hide();
+			$hongbao.hide();
+			$("body").css("overflow","");
+		},5000)
+	})
 //	<li>
 //		<img src="img/1.jpg" />
 //		<p>儿童木质拼图益智幼儿宝宝30/60/100片3-4-5-6-7-8-9岁男女孩玩具</p>

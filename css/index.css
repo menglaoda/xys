@@ -162,6 +162,60 @@ body{
 	color: #666;
 	display: none;
 }
+.zhezhao{
+	width: 100vw;
+	height: 500px;
+	background: #ccc;
+	display: none;
+	opacity: 0.6;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+.hongbao{
+	width: 300px;
+	height: 220px;
+	overflow: hidden;
+	border-radius: 10px;
+	position: fixed;
+	left: 50%;
+	top: -250px;
+	margin-left: -150px;
+	cursor: pointer;
+}
+.hongbao img{
+	width: 300px;
+	height: 220px;
+}
+.hongbao .hongbao_cai{
+	position: absolute;
+	left: 123px;
+	top: 102px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	border-radius: 50%;
+	opacity: 0;
+	color: white;
+	background: #e51e23;
+	font-size: 14px;
+	font-weight: 900;
+	text-shadow: 2px 2px 2px white;
+}
+.hongbao .hongbao_x{
+	width: 30px;
+	height: 30px;
+	line-height: 26px;
+	text-align: center;
+	color: #9c1111;
+	font-size: 30px;
+	border: solid 1px #ae2020;
+	border-radius: 100%;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
 @media screen and (max-width: 540px) {
 	body{
 		font-family: "微软雅黑";
