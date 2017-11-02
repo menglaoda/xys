@@ -29,7 +29,7 @@ $(function(){
 			$hongbao.animate({top: "40vw"},2000);
 		}
 		$("body").css("overflow","hidden");
-		$('aside').on('touchmove', function(event) {
+		$(document).on('touchmove', function(event) {
 		    event.preventDefault();//使网页不可滚动
 		});
 	},3000)
