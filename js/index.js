@@ -34,8 +34,9 @@ $(function(){
 	$(".hongbao_x").on("click",function(){
 		$zhezhao.hide();
 		$hongbao.hide();
-		clearInterval(timerr);
 		$("body").css("overflow","");
+		//返回顶部
+		//$("body").animate({scrollTop: 0},1000);
 	})	
 	//点击拆红包
 	$(".hongbao_cai").on("click",function(){
