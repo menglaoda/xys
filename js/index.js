@@ -21,7 +21,13 @@ $(function(){
 	setTimeout(function(){
 		$zhezhao.css("height",$(document).height());
 		$zhezhao.show();
-		$hongbao.animate({top: "40vw"},2000);
+		if(parseInt($("body").width())>=500){
+			console.log("pc")
+			$hongbao.animate({top: "200px"},2000);
+		}else{
+			console.log("yidong")
+			$hongbao.animate({top: "40vw"},2000);
+		}
 		$("body").css("overflow","hidden");
 	},3000)
 	//点击X红包消失
