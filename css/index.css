@@ -164,9 +164,9 @@ body{
 	width: 100vw;
 }
 .header_sousu{
-	border: solid 1px #ccc;
 	width: 60vw;
 	height: 6vw;
+	border: solid 1px #ccc;
 }
 .header_sousu input{
 	width: 40vw;
