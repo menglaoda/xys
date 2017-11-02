@@ -16,6 +16,7 @@ li{
 body{
 	font-family: "微软雅黑";
 	background: #fafafa;
+	overflow-x: hidden;
 }
 .header{
 	width: 80vw;
@@ -209,12 +210,14 @@ body{
 }	
 .list li{
 	width:100vw;
+	height: 33vw;
 	border: none;
 }	
 .list img{
 	width: 30vw;
 	height: 33vw;
 	display: block;
+	margin-left: 1vw;
 }	
 .list p{
 	width: 62vw;
