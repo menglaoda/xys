@@ -38,6 +38,7 @@ $(function(){
 		$zhezhao.hide();
 		$hongbao.hide();
 		$("body").css("overflow","");
+		$(document).unbind("touchmove");
 		//返回顶部
 		//$("body").animate({scrollTop: 0},1000);
 	})	
@@ -56,6 +57,7 @@ $(function(){
 			$zhezhao.hide();
 			$hongbao.hide();
 			$("body").css("overflow","");//使网页可滚动
+			$(document).unbind("touchmove");
 		},5000)
 	})
 //	<li>
