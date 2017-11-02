@@ -81,8 +81,8 @@ $(function(){
 							var $h4 = $("<h4></h4>");
 							$img.attr("src",item.url).appendTo($li);
 							$p.html(item.name).appendTo($li);
-							$span1.html("￥").attr("class","prize").appendTo($li);
 							$b.html(item.prize).appendTo($span1);
+							$span1.html("￥").attr("class","prize").appendTo($li);
 							$span2.html(item.address).attr("class","address").appendTo($li);
 							$h4.html("月销"+" "+item.Sales).appendTo($li);
 							$li.appendTo($list);			
