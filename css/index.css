@@ -166,7 +166,8 @@ body{
 .header_sousu{
 	width: 60vw;
 	height: 6vw;
-	border: solid 1px #ccc;
+	border: solid 1px red;
+	position: relative;
 }
 .header_sousu input{
 	width: 40vw;
@@ -179,7 +180,9 @@ body{
 }
 .header_sousu p{
 	height: 6vw;
-	line-height: 8px;
+	line-height: 6vw;
+	position: absolute;
+	right: 0;
 }
 .naw li{
 	line-height: 24px;
