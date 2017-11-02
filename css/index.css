@@ -51,6 +51,7 @@ body{
 	background: red;
 	display: block;
 	height: 24px;
+	line-height: 24px;
 	text-align: center;
 	width: 40px;
 	line-height: 24px;
@@ -167,6 +168,9 @@ body{
 }
 .header_sousu input{
 	width: 40vw;
+}
+.header_sousu span{
+	line-height: 20px;
 }
 .naw li{
 	line-height: 24px;
