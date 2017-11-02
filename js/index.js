@@ -21,7 +21,7 @@ $(function(){
 	setTimeout(function(){
 		$zhezhao.css("height",$(document).height());
 		$zhezhao.show();
-		$hongbao.animate({top: "+200px"},2000);
+		$hongbao.animate({top: "40vw"},2000);
 		$("body").css("overflow","hidden");
 	},3000)
 	//点击X红包消失

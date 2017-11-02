@@ -177,9 +177,9 @@ body{
 	height: 220px;
 	overflow: hidden;
 	border-radius: 10px;
-	position: absolute;
+	position: fixed;
 	left: 50%;
-	top: -250px;
+	top: -80vw;
 	margin-left: -150px;
 	cursor: pointer;
 }
