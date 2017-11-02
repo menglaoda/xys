@@ -13,7 +13,6 @@ body{
 }
 .header{
 	width: 80vw;
-	height: 50px;
 	height: 43px;
 	margin: 0 auto;
 	background: url(../img/taotao.jpg) no-repeat;
@@ -165,12 +164,16 @@ body{
 	width: 100vw;
 }
 .header_sousu{
+	border: solid 1px #ccc;
 	width: 60vw;
+	height: 6vw;
 }
 .header_sousu input{
 	width: 40vw;
+	height: 4vw;
 }
 .header_sousu span{
+	height: 6vw;
 	line-height: 8px;
 }
 .naw li{
