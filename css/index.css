@@ -44,7 +44,7 @@ body{
 	width: 16px;
 	height: 16px;
 	position: absolute;
-	right: 36px;
+	right: 42px;
 	top: 3px;
 }
 .header_sousu span{
@@ -52,7 +52,7 @@ body{
 	display: block;
 	height: 24px;
 	text-align: center;
-	width: 34px;
+	width: 40px;
 	line-height: 24px;
 	position: absolute;
 	top: -1px;
@@ -157,6 +157,7 @@ body{
 @media screen and (max-width: 540px) {
 	body{
 		font-size: 12px;
+		color: #404040;;
 	}
 .header{
 	width: 100vw;
@@ -168,6 +169,7 @@ body{
 	width: 40vw;
 }
 .naw li{
+	line-height: 24px;
 	padding: 0px 5px;
 	
 }
@@ -198,7 +200,7 @@ body{
 }
 .list .prize{
 	position: absolute;
-	top: 26vw;
+	top: 25vw;
 	left: 32vw;
 }
 .list .address{
