@@ -170,6 +170,8 @@ body{
 	position: relative;
 }
 .header_sousu input{
+	position: absolute;
+	top: 1vw;
 	width: 40vw;
 	height: 4vw;
 }
