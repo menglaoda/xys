@@ -29,15 +29,14 @@ $(function(){
 			$hongbao.animate({top: "40vw"},2000);
 		}
 		$("body").css("overflow","hidden");
-		$(".box").css("height",$(document).height());
-		$(".box").css("overflow","hidden");
+		$('aside').on('touchmove', function(event) {
+		    event.preventDefault();//使网页不可滚动
+		});
 	},3000)
 	//点击X红包消失
 	$(".hongbao_x").on("click",function(){
 		$zhezhao.hide();
 		$hongbao.hide();
-		$(".box").css("height","");
-		$(".box").css("overflow","");
 		$("body").css("overflow","");
 		//返回顶部
 		//$("body").animate({scrollTop: 0},1000);
@@ -56,7 +55,7 @@ $(function(){
 			clearInterval(timerr);
 			$zhezhao.hide();
 			$hongbao.hide();
-			$("body").css("overflow","");
+			$("body").css("overflow","");//使网页可滚动
 		},5000)
 	})
 //	<li>
