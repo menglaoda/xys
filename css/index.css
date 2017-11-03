@@ -292,13 +292,13 @@ body{
 .flexdimg_0{
 	width: 11vw;
 	position: fixed;
-	left: -10px;
+	left: -15px;
 	bottom: -10px;
 }
 .flexdimg{
 	width: 9vw;
 	position: fixed;
-	left: 3px;
+	left: -2px;
 	top: -30px;
 }
 @media screen and (max-width: 540px) {
