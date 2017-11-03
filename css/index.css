@@ -37,6 +37,7 @@ body{
 }
 .header_sousu input{
 	outline: medium;
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
 	text-indent: 16px;
 	background: white;
 	border: none;
