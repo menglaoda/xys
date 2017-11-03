@@ -2,22 +2,20 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;  
- 
-
 }
-li{ 
-	-webkit-user-select:none; /*webkit浏览器*/     
-    -khtml-user-select:none; /*早期浏览器*/     
-    -moz-user-select:none;/*火狐*/     
-    -ms-user-select:none; /*IE10*/     
-    user-select:none; 
-	cursor: pointer;
+li{
 	list-style: none;
 }
 body{
 	font-family: "微软雅黑";
 	background: #fafafa;
 	overflow-x: hidden;
+	-webkit-user-select:none; /*webkit浏览器*/     
+    -khtml-user-select:none; /*早期浏览器*/     
+    -moz-user-select:none;/*火狐*/     
+    -ms-user-select:none; /*IE10*/     
+    user-select:none; 
+	cursor: pointer;
 }
 .header{
 	width: 80vw;
@@ -40,6 +38,7 @@ body{
 .header_sousu input{
 	outline: medium;
 	text-indent: 16px;
+	background: white;
 	border: none;
 	width: 330px;
 	height: 22px;
@@ -171,6 +170,7 @@ body{
 	position: absolute;
 	left: 0px;
 	top: 0px;
+	z-index: 666;
 }
 .hongbao{
 	width: 300px;
@@ -182,6 +182,7 @@ body{
 	top: -80vw;
 	margin-left: -150px;
 	cursor: pointer;
+	z-index: 999;
 }
 .hongbao img{
 	width: 300px;
@@ -208,13 +209,97 @@ body{
 	height: 30px;
 	line-height: 26px;
 	text-align: center;
-	color: #9c1111;
+	color: white;
 	font-size: 30px;
 	border: solid 1px #ae2020;
 	border-radius: 100%;
 	position: absolute;
 	right: 0px;
 	top: 0px;
+}
+.content_right{
+	width: 5vw;
+	height: 100vh;
+	background: white;
+	position: fixed;
+	top: 0vw;
+	right: 0vw;
+	z-index: 99;
+}
+.content_right li{
+	height: 20vh;
+	color: #999;
+	display: flex;
+	flex-direction:column;
+	text-align: center;
+}
+.content_right li:nth-child(2){
+	position: relative;
+}
+.content_right .geren_box{
+	width: 250px;
+	height: 20vh;
+	color: #999;
+	background: white;
+	text-align: center;
+	display: none;
+	box-shadow: 2px 1px 1px 1px #eee;
+	position: absolute;
+	left: -290px ;
+	top: 0;
+}
+.content_right .geren_box::before{
+	content: "";
+	width: 0vw;
+	height: 0vw;
+	border: solid 20px transparent;
+	border-left-color:#ccc ;
+	position: absolute;
+	right:-40px;
+	top: 8vh;
+}
+.content_right .geren_box::after{
+	content: "";
+	width: 0vw;
+	height: 0vw;
+	border: solid 20px transparent;
+	border-left-color:white;
+	position: absolute;
+	right:-39px;
+	top: 8vh;
+}
+.content_right .geren_box a{
+	padding: 0vw 1vw;
+	text-decoration: none;
+	color: red;
+}
+.content_right .geren_box a:hover{
+	text-decoration: underline;
+}
+.content_right li:nth-child(4){
+	background: red;
+	color: white;
+}
+.content_right i{
+	margin-top: 3vw;
+	font-size: 3vw;
+}
+.content_right span{
+	width: 3vw;
+	margin: 0 auto;
+	display: block;
+}
+.flexdimg_0{
+	width: 11vw;
+	position: fixed;
+	left: -10px;
+	bottom: -10px;
+}
+.flexdimg{
+	width: 9vw;
+	position: fixed;
+	left: 3px;
+	top: -30px;
 }
 @media screen and (max-width: 540px) {
 	body{
@@ -224,12 +309,14 @@ body{
 	}
 .header{
 	width: 100vw;
+	position: relative;
 }
 .header_sousu{
 	width: 60vw;
 	height: 6vw;
 	border: solid 1px red;
-	position: relative;
+	position: absolute;
+	right: 10vw;
 }
 .header_sousu input{
 	position: absolute;
@@ -255,6 +342,15 @@ body{
 	
 }
 .tuijian{
+	display: none;
+}
+.content_right{
+	display: none;
+}
+.flexdimg{
+	display: none;
+}
+.flexdimg_0{
 	display: none;
 }
 .naw{

@@ -39,8 +39,7 @@ $(function(){
 		$hongbao.hide();
 		$("body").css("overflow","");
 		$(document).unbind("touchmove");//使网页可滚动
-		//返回顶部
-		//$("body").animate({scrollTop: 0},1000);
+		
 	})	
 	//点击拆红包
 	$(".hongbao_cai").on("click",function(){
@@ -138,4 +137,47 @@ $(function(){
 			})
         }
 	})
+	//移入右边信息栏
+	$(".content_right li").on("mouseover",function(){
+		$(this).css({"background":"red","color":"white"});
+		$(this).siblings("li").css({"background":"white","color":"#999"});
+	})
+	//移入个人中心
+	$(".content_right li").eq(1).on("mouseover",function(){
+		$(".geren_box").show();
+		$(".geren_box").animate({
+			left:"-260px"
+		},1000)
+	})
+	$(".content_right li").eq(1).on("mouseout",function(){
+		
+		$(".geren_box").animate({
+			left:"-290px"
+		},1000)
+		$(".geren_box").hide();	
+	})
+	//移入个人中心弹出框
+	$(".geren_box").on("mouseenter",function(){
+		$(this).show();
+	})
+	$(".geren_box").on("mouseleave",function(){		
+		$(".geren_box").animate({
+			left:"-290px"
+		},1000)
+		$(this).hide();
+	})
+	$("#dingbu").on("click",function(){
+		//返回顶部
+		$("body").animate({scrollTop: 0},1000);
+	})
+	//二维码图片运动
+	$(".flexdimg").animate({top:"10vh"},10000,function(){
+		$(".flexdimg").animate({top:"10px"},10000)
+	  })
+	setInterval(function(){
+			$(".flexdimg").animate({top:"10vh"},10000,function(){
+			$(".flexdimg").animate({top:"10px"},10000)
+	    })
+	},20000)
+	
 })
