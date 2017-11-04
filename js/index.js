@@ -1,19 +1,4 @@
-window.onload = function(){
-	var tuijian = document.querySelector(".tuijian");
-	var tuijian_lunbo = document.querySelector(".tuijian_lunbo");
-	var tuijian_lunbo_img = tuijian_lunbo.querySelectorAll("img");
-	var width = tuijian_lunbo_img[0].offsetWidth;
-	
-	var i =0;
-	setInterval(function(){
-		i++
-		tuijian_lunbo.style.left = -i*80+"vw";
-		if(i>tuijian_lunbo_img.length-1){
-			i=0;
-			tuijian_lunbo.style.left = -i*80+"vw";
-		}
-	},4000)
-}
+
 $(function(){
 	//红包天降
 	var $zhezhao = $(".zhezhao");
@@ -59,12 +44,24 @@ $(function(){
 			$(document).unbind("touchmove");
 		},3000)
 	})
+	//轮播图
+	var i =0;
+	setInterval(function(){
+		i++
+		$(".tuijian_lunbo").css("left",-i*80+"vw");
+		if(i>$(".tuijian_lunbo img").length-1){
+			i=0;
+			$(".tuijian_lunbo").css("left",-i*80+"vw");
+		}
+	},4000)
+
 //	<li>
 //		<img src="img/1.jpg" />
 //		<p>儿童木质拼图益智幼儿宝宝30/60/100片3-4-5-6-7-8-9岁男女孩玩具</p>
-//		<span>￥<b>28</b></span><span class="address">杭州</span>
+//		<span class="prize">￥<b>28</b></span><span class="address">杭州</span>
 //		<h4>月销  1666</h4>
 //	</li>
+    //ajax加载
 	var $list = $(".list");
 	$.ajax({
 		url:"js/index.json",
@@ -72,6 +69,7 @@ $(function(){
 		success:function(res){
 			$(res).each(function(idx,item){
 				console.log(item)
+				//第一次加载12条数据
 				if(idx>=12){
 					return;
 				}
@@ -93,6 +91,7 @@ $(function(){
 		}
 	})
 	var j=0;
+	//滚动到底部加载数据
 	$(window).on("scroll",function(){
 //		$(document).height(),文档高度
 //		$(window).height(),可见高度
@@ -149,8 +148,7 @@ $(function(){
 			left:"-260px"
 		},1000)
 	})
-	$(".content_right li").eq(1).on("mouseout",function(){
-		
+	$(".content_right li").eq(1).on("mouseout",function(){	
 		$(".geren_box").animate({
 			left:"-290px"
 		},1000)
@@ -166,8 +164,8 @@ $(function(){
 		},1000)
 		$(this).hide();
 	})
-	$("#dingbu").on("click",function(){
-		//返回顶部
+	//返回顶部
+	$("#dingbu").on("click",function(){		
 		$("body").animate({scrollTop: 0},1000);
 	})
 	//二维码图片运动
