@@ -166,7 +166,7 @@ $(function(){
 	})
 	//返回顶部
 	$("#dingbu").on("click",function(){		
-		$("body").animate({scrollTop: 0},1000);
+		$("html,body").animate({scrollTop: 0},1000);
 	})
 	//二维码图片运动
 	$(".flexdimg").animate({top:"10vh"},10000,function(){
